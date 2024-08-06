@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiPostgresql } from 'react-icons/di';
+import { DiReact, DiPostgresql, TbBrandCpp } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -29,6 +29,16 @@ const Technologies = () =>  (
           <ListParagraph>
             Experience with <br />
             PostgreSQL and Google Looker Studio
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        {/* <TbBrandCpp size="3rem" /> */}
+        <ListContainer>
+          <ListTitle>ICPC</ListTitle>
+          <ListParagraph>
+            Experience in <br />
+            some ICPC contests around the city
           </ListParagraph>
         </ListContainer>
       </ListItem>
