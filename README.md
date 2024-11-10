@@ -1,7 +1,7 @@
 ## Personal Portfolio
 # Portafolio Final
 
-This is my web development portfolio, where I show all my projects an skills.
+This is my web development portfolio, where I show all my projects and skills.
 
 ## Getting Started
 

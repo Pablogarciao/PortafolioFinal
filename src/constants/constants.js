@@ -10,11 +10,11 @@ export const projects = [
   },
   {
     title: 'E-Commerce',
-    description:"I've worked in aproject of building an E-Commerce Website for a Drop-Shipping.",
+    description:"I've done an E-Commerce Website for a Drop-Shipping.",
     image: '/images/2.png',
     tags: ['Shopify', 'Drop-Shipping'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    visit: 'https://github.com/Pablogarciao/MarketPlaceWeb.git',
+    soruce: 'https://market-place-web.vercel.app/',
     id: 1,
   },
   {
@@ -29,7 +29,7 @@ export const projects = [
   {
     title: 'Personal Portafolio',
     description: "I deployed my personal portafolio using React and Next.js to be able to find new job opportunities and create a better window to the world.",
-    image: '/images/4.jpg',//FALTA
+    image: '/images/4.jpg',
     tags: ['React', 'Next.js'],
     source: 'https://github.com/Pablogarciao/PortafolioFinal.git',
     visit: 'https://google.com',
@@ -43,4 +43,6 @@ export const TimeLineData = [
   { year: 2023, text: 'Lerned new languages and skills', },
   { year: 2024, text: 'Learned SQL in depth', },
   { year: 2024, text: 'Started working in Full Stack Projects', },
+  { year: 2024, text: 'Participated in many Hackatons, learned data engineering in depth', },
+
 ];

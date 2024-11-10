@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
-import profilePic from '/Users/pablogarcia/Documents/EIA/SÉPTIMO/WEB/NUEVO/public/images/ProfPic.jpg';
+import Image from 'next/image';
 //import { MdOutlinePedalBike } from 'react-icons/ai';
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -42,9 +42,15 @@ const Timeline = () => {
       <br />
         <SectionTitle>About Me</SectionTitle>
         <SectionText>
-        I am a Computer Science Ingeniering student at the Universidad EIA. I am passionate about technology and I am always looking for new challenges. I am a very proactive person and I am always looking for new opportunities to learn and grow. I am a very responsible person and I always try to give my best in everything I do.
+        I am a Computer Science Ingeniering student at Universidad EIA. I am passionate about technology and I am always looking for new challenges. I am a very proactive person and I am always looking for new opportunities to learn and grow. I am a very responsible person and I always try to give my best in everything I do.
         </SectionText>
-        <img src={profilePic} alt="Profile" style={{ width: '200px', height: 'auto' }} /> {/* adjust the width as needed */}
+        <Image 
+          src="/images/ProfPic2.jpg" 
+          alt="Profile" 
+          width={200}
+          height={200}
+          priority
+        />
         <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>

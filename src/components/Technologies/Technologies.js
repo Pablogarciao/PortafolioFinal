@@ -9,7 +9,7 @@ const Technologies = () =>  (
     <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked in a range of proyects in the university from Front-End to Data-Analysys with Webscrapping.  
+      I've worked in a range of proyects in the university from Front-End, Backend to Data-Analysys with Webscrapping. Within the projects I've worked with a range of technologies in the field of Computer Science, such as React, PostgreSQL, Mongo, MySQL, Google Looker Studio, Docker, AWS, NestJS, Next.js, Springboot, Java, Python, Javascript, Typescript, SQL, C++.  
     </SectionText>
     <List>
       <ListItem>
