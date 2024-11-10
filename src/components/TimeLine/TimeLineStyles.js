@@ -1,6 +1,22 @@
 
 import styled from 'styled-components'
 
+export const StyledImageContainer = styled.div`
+  display: flex;
+  justify-content: start;
+  margin: 2rem 0;
+`;
+
+export const ImageWrapper = styled.div`
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid ${(props) => props.theme.colors.secondary};
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+`;
+
 export const CarouselContainer = styled.ul`
   max-width: 1040px;
   background: #0F1624;
@@ -15,7 +31,9 @@ export const CarouselContainer = styled.ul`
     margin-left: 0px;
   }
 
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+  margin-top: 50px;
+
 
   //remove scrollbar
   scrollbar-width: none;  
