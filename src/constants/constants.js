@@ -41,7 +41,7 @@ export const projects = [
       "PostgreSQL",
     ],
     visit: "https://github.com/Tuardewijuro/hackathon-back2.git",
-    source: "https://hackathon-front-8na7.vercel.app/",
+    source: "https://github.com/Tuardewijuro/hackathon-front.git",
     id: 2,
   },
   {
@@ -66,7 +66,7 @@ export const projects = [
   {
     title: "ETL's with Pentaho, Knime and Python",
     description:
-      "I've worked with a range of data tools to create ETL's in diffferent ways, such as python, pentaho, knime and databticks",
+      "I've worked with a range of data tools to create ETL's in different ways, such as python, pentaho, knime and databticks",
     image: "/images/6.png",
     tags: [
       "Pentaho",
