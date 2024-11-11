@@ -40,8 +40,8 @@ export const projects = [
       "React",
       "PostgreSQL",
     ],
-    source: "https://google.com",
-    visit: "https://google.com",
+    visit: "https://github.com/Tuardewijuro/hackathon-back2.git",
+    source: "https://hackathon-front-8na7.vercel.app/",
     id: 2,
   },
   {
