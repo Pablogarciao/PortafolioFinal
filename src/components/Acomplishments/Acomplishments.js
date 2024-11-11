@@ -9,7 +9,7 @@ import { Box, Boxes, BoxNum, BoxText } from "./AcomplishmentsStyles";
 
 const data = [
   { number: 10, text: "Data, Front and Backend Projects" },
-  { number: 3, text: "ICPC Camps and Hackatons" },
+  { number: 3, text: "Hackatons and ICPC camps" },
   // { number: 2, text: ' in a Full Stack/ML-Data Hackaton', }
 ];
 const hackathon = [

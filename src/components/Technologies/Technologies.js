@@ -1,15 +1,32 @@
-import React from 'react';
-import { DiReact, DiPostgresql, TbBrandCpp } from 'react-icons/di';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import React from "react";
+import { DiReact, DiPostgresql, DiDatabase } from "react-icons/di";
+import {
+  Section,
+  SectionDivider,
+  SectionText,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import {
+  List,
+  ListContainer,
+  ListItem,
+  ListParagraph,
+  ListTitle,
+} from "./TechnologiesStyles";
 
-const Technologies = () =>  (
+const Technologies = () => (
   <Section id="tech">
     <SectionDivider />
     <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked in a range of proyects in the university from Front-End, Backend to Data-Analysys with Webscrapping. Within the projects I've worked with a range of technologies in the field of Computer Science, such as React, PostgreSQL, Mongo, MySQL, Google Looker Studio, Docker, AWS, NestJS, Next.js, Springboot, Java, Python, Javascript, Typescript, SQL, C++.  
+      I have worked on a variety of university projects, ranging from front-end
+      and back-end development to data extraction, transformation and analysys,
+      as well as web scraping, cloud deployments and more. Troughout these
+      projects, I've worked with a range of technologies in the field of
+      Computer Science, such as PostgreSQL, Mongo, MySQL, Google Looker Studio,
+      Docker, Knime, Pentaho, Databricks, AWS, NestJS, Next.js, Springboot,
+      Java, Python, React, Javascript, Typescript, SQL and C++.
     </SectionText>
     <List>
       <ListItem>
@@ -25,21 +42,18 @@ const Technologies = () =>  (
       <ListItem>
         <DiPostgresql size="3rem" />
         <ListContainer>
-          <ListTitle>Data-Analysys</ListTitle>
+          <ListTitle>Data-Analysis</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            PostgreSQL and Google Looker Studio
+            Experience with PostgreSQL, Google Looker Studio, Pentaho,
+            Webscraping, Pandas abd Knime
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        {/* <TbBrandCpp size="3rem" /> */}
+        <DiDatabase size="3rem" />
         <ListContainer>
-          <ListTitle>ICPC</ListTitle>
-          <ListParagraph>
-            Experience in <br />
-            some ICPC contests around the city
-          </ListParagraph>
+          <ListTitle>Back-End</ListTitle>
+          <ListParagraph>Experience with NestJS and Springboot</ListParagraph>
         </ListContainer>
       </ListItem>
     </List>

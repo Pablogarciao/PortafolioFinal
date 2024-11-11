@@ -76,7 +76,7 @@ const Timeline = () => {
         <StyledImageContainer>
           <ImageWrapper>
             <Image
-              src="/images/ProfPic2.jpg"
+              src="/images/AnotherOne.png"
               alt="Profile"
               width={192}
               height={256}
