@@ -1,16 +1,23 @@
-import Link from 'next/link';
-import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { DiTravis } from 'react-icons/di';
+import Link from "next/link";
+import React from "react";
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { DiTravis } from "react-icons/di";
+import { IoBagRemoveSharp } from "react-icons/io5";
+import {
+  Container,
+  Div1,
+  Div2,
+  Div3,
+  NavLink,
+  SocialIcons,
+} from "./HeaderStyles";
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
-
-const Header = () =>  (
+const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: 'flex', alignItems: 'center', color:"white" }}>
-          <DiTravis size="3rem" /> <span>Portfolio</span>
+        <a style={{ display: "flex", alignItems: "center", color: "white" }}>
+          <IoBagRemoveSharp size="3rem" /> <span>Portfolio</span>
         </a>
       </Link>
     </Div1>
@@ -24,7 +31,7 @@ const Header = () =>  (
         <Link href="#tech">
           <NavLink>Technologies</NavLink>
         </Link>
-      </li>        
+      </li>
       <li>
         <Link href="#about">
           <NavLink>About</NavLink>
@@ -39,20 +46,20 @@ const Header = () =>  (
         <Link href="#achievements">
           <NavLink>Achievements</NavLink>
         </Link>
-      </li>                  
+      </li>
     </Div2>
-      <Div3>
+    <Div3>
       <SocialIcons href="https://github.com/Pablogarciao">
-          <AiFillGithub size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://www.linkedin.com/in/pablo-garc%C3%ADa-480814226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
-          <AiFillLinkedin size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://www.instagram.com/pablogarciao7/">
-          <AiFillInstagram size="3rem" />
-        </SocialIcons>
-      </Div3>
-    </Container>
+        <AiFillGithub size="3rem" />
+      </SocialIcons>
+      <SocialIcons href="https://www.linkedin.com/in/pablo-garc%C3%ADa-480814226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+        <AiFillLinkedin size="3rem" />
+      </SocialIcons>
+      <SocialIcons href="https://www.instagram.com/pablogarciao7/">
+        <AiFillInstagram size="3rem" />
+      </SocialIcons>
+    </Div3>
+  </Container>
 );
 
 export default Header;

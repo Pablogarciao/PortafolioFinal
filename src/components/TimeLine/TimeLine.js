@@ -67,19 +67,21 @@ const Timeline = () => {
         <br />
         <SectionTitle>About Me</SectionTitle>
         <SectionText>
-          I am a Computer Science Ingeniering student at Universidad EIA. I am
-          passionate about technology and I am always looking for new
-          challenges. I am a very proactive person and I am always looking for
-          new opportunities to learn and grow. I am a very responsible person
-          and I always try to give my best in everything I do.
+          I am a Computer Science Ingeniering student at Universidad EIA in
+          Medellín, Colombia. I really like embracing the challenges as
+          opportunities for growth. I am passionate about activities that push
+          me to improve and learn, such as entrepreneurship, which I am
+          currently pursuing. I have always prioritized cultivating a strong
+          desire for learning, and working with diverse teams has taught me the
+          importance of respect and effective communication within a group.
         </SectionText>
         <StyledImageContainer>
           <ImageWrapper>
             <Image
               src="/images/AnotherOne.png"
               alt="Profile"
-              width={192}
-              height={256}
+              width={480}
+              height={489}
               className="object-cover rounded-full"
               priority
             />
@@ -156,9 +158,9 @@ const Timeline = () => {
         <SectionTitle>Hobbies</SectionTitle>
         <SectionText>
           I'm a very athletic person, I love riding bikes and going to the gym.
-          I also love the agricultural sector and being out in the nature. I am
-          a very social person and I love spending time with my friends and
-          family.
+          I also love the agricultural sector, being out in the nature and the
+          entrepreneurship. I am a very social person and I love spending time
+          with my friends and family.
           {/* <MdOutlinePedalBike size="3rem" /> */}
         </SectionText>
         <SectionDivider />
