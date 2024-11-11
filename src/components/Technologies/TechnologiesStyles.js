@@ -34,34 +34,33 @@ export const MainImage = styled.img`
 
 export const List = styled.ul`
   list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px; // This ensures equal spacing between all grid items
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; // This ensures equal spacing between items
+  align-items: center;
   margin: 3rem auto;
   max-width: 1040px;
   position: relative;
-  padding: 0; // Remove any default padding
-  justify-content: center; // Center the grid items
-  align-items: center; // Align items vertically
+  padding: 0;
+  gap: 100px; // Maintains spacing between flex items
 
   @media ${(props) => props.theme.breakpoints.lg} {
     margin: 64px auto;
     padding: 0 20px;
-    gap: 32px; // Slightly reduced gap for larger screens
+    gap: 32px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
     margin: 64px auto;
-    gap: 24px; // Further reduced gap for medium screens
+    gap: 24px;
     padding: 0 20px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    display: flex;
     flex-direction: column;
     margin: 32px auto;
     padding: 0 16px;
-    gap: 16px; // Minimal gap for mobile view
+    gap: 16px;
   }
 `;
 
@@ -121,6 +120,7 @@ export const ListItem = styled.li`
   align-items: flex-start;
   margin: 0; // Remove margin to let grid gap control spacing
   position: relative;
+  width: fit;
 
   &:not(:last-child)::after {
     content: "";
