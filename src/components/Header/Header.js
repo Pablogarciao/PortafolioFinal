@@ -26,20 +26,19 @@ const Header = () => (
           <span style={{ marginLeft: "0.5rem" }}>Portfolio</span>
         </a>
       </Link>
-      {/* Adding margin for better visual separation */}
-      <div style={{ marginTop: "1rem" }}>
-        <ResumeSection>
-          <a
-            href="https://drive.google.com/file/d/1bNtyTrAfF8OKRdL1mSMYAYa7TDHV9mXi/view?usp=drive_link"
-            download
-            style={{ display: "flex", alignItems: "center", color: "white" }}
-          >
-            <AiOutlineDownload size="2rem" />
-            <span style={{ marginLeft: "0.5rem" }}>My Resume</span>
-          </a>
-        </ResumeSection>
-      </div>
     </Div1>
+    <ResumeSection>
+      <Link
+        href="https://drive.google.com/file/d/1bNtyTrAfF8OKRdL1mSMYAYa7TDHV9mXi/view?usp=drive_link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <a style={{ display: "flex", alignItems: "center" }}>
+          <AiOutlineDownload size="2rem" />
+          <span style={{ marginLeft: "0.5rem" }}>My Resume</span>
+        </a>
+      </Link>
+    </ResumeSection>
     <Div2>
       <li>
         <Link href="#projects">
