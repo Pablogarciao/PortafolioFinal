@@ -1,7 +1,11 @@
 import Link from "next/link";
 import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { DiTravis } from "react-icons/di";
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiOutlineDownload,
+} from "react-icons/ai";
 import { IoBagRemoveSharp } from "react-icons/io5";
 import {
   Container,
@@ -10,6 +14,7 @@ import {
   Div3,
   NavLink,
   SocialIcons,
+  ResumeSection,
 } from "./HeaderStyles";
 
 const Header = () => (
@@ -17,9 +22,23 @@ const Header = () => (
     <Div1>
       <Link href="/">
         <a style={{ display: "flex", alignItems: "center", color: "white" }}>
-          <IoBagRemoveSharp size="3rem" /> <span>Portfolio</span>
+          <IoBagRemoveSharp size="3rem" />
+          <span style={{ marginLeft: "0.5rem" }}>Portfolio</span>
         </a>
       </Link>
+      {/* Adding margin for better visual separation */}
+      <div style={{ marginTop: "1rem" }}>
+        <ResumeSection>
+          <a
+            href="https://drive.google.com/file/d/1bNtyTrAfF8OKRdL1mSMYAYa7TDHV9mXi/view?usp=drive_link"
+            download
+            style={{ display: "flex", alignItems: "center", color: "white" }}
+          >
+            <AiOutlineDownload size="2rem" />
+            <span style={{ marginLeft: "0.5rem" }}>My Resume</span>
+          </a>
+        </ResumeSection>
+      </div>
     </Div1>
     <Div2>
       <li>
